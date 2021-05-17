@@ -1,0 +1,11 @@
+{
+	"data": {
+		"imageUrl": "assets/images/kitten2.jpg",
+		"imageAlt": "kittens",
+		"imageTopText": "My pets",
+		"imageBottomText": "aren't they lovely",
+		"textSize1": "This text is the big",
+		"textSize2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida ipsum orci, eget tincidunt tellus tempor eu. In convallis urna sit amet pulvinar gravida. Nunc venenatis tristique dictum.",
+		"textSize3": "Lorem ipsum dolor sit amet."
+	}
+}

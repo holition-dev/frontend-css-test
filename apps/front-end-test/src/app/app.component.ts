@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'holition-test-root',
+  selector: 'frontend-test-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
