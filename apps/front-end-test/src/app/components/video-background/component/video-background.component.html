@@ -1,0 +1,25 @@
+<section class="video-background">
+	<video *ngIf="videoInput"
+				#videoTag
+				muted
+				preload
+				playsinline
+				webkit-playsinline
+				class="video-background__clip"
+				(playing)="onPlaying($event)"
+				(ended)="onCompleteVideo($event)"
+				(loadedmetadata)="onLoadMetadata($event, videoTag)">
+				<source type="video/mp4"
+								[src]="videoUrl" />
+
+				<track label="English"
+								kind="captions"
+								srclang="en"
+								default />
+	</video>
+
+	<div *ngIf="posterUrl"
+			class="video-background__poster"
+			[ngClass]="posterClass"
+			[ngStyle]="{ 'background-image': 'url(' + posterUrl + ')' }"></div>
+</section>

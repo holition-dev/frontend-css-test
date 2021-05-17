@@ -1,0 +1,30 @@
+{
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "holition-test",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "front-end-test": {
+      "tags": []
+    },
+    "front-end-test-e2e": {
+      "tags": [],
+      "implicitDependencies": ["front-end-test"]
+    }
+  }
+}
