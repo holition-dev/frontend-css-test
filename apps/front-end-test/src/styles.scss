@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+    url('/assets/fonts/Montserrat-Regular.ttf') format('woff');
+  // font-display: swap;
+}
+
+html,
+body {
+  background-color: #fafad2;
+  color: #1f2937;
+  font: 16px Montserrat, 'Montserrat', sans-serif;
+}

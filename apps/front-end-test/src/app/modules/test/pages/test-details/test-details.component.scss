@@ -1,0 +1,21 @@
+.test__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  height: 100%;
+
+  & .details__textSize1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  & .details__textSize2 {
+    font-size: 1.375rem;
+    font-weight: 600;
+  }
+  & .details__textSize3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}

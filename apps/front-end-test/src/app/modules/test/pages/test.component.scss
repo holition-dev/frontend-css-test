@@ -1,0 +1,49 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    // font-weight: 900;
+  }
+
+  .test__body {
+    display: flex;
+    padding: 1rem;
+    height: calc(100vh - 10rem);
+
+    & holition-test-image {
+      flex: auto;
+      overflow: hidden;
+      border-radius: 0.5rem 0 0 0.5rem;
+    }
+    & holition-test-details {
+      overflow: hidden;
+      border-radius: 0 0.5rem 0.5rem 0;
+      padding: 6rem 2rem;
+
+      box-sizing: border-box;
+      height: 100%;
+      width: clamp(20rem, 30%, 30rem);
+      background-color: #daa520;
+    }
+
+    @media (max-width: 48rem) {
+      height: auto;
+      flex-direction: column;
+
+      & holition-test-image {
+        margin-bottom: -0.15rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+      }
+      & holition-test-details {
+        border-radius: 0 0 0.5rem 0.5rem;
+        width: auto;
+        padding: 2rem;
+        overflow: auto;
+      }
+    }
+  }
+}

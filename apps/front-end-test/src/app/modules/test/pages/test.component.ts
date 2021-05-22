@@ -14,7 +14,6 @@ export class TestComponent implements OnInit {
   ngOnInit(): void {
     this.myService.getTestData().subscribe((res: JsonData) => {
       this.jsonData = res;
-      console.log(res.data);
     });
   }
 }
