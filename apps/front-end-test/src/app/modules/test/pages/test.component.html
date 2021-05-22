@@ -2,11 +2,12 @@
 <main>
   <h1>Welcome to front-end-test!</h1>
   <div class="text__body">
-    <div class="test_image">
-      <img [src]="jsonData?.data.imageUrl" [alt]="jsonData?.data.imageAlt" />
-      <p class="image__topText">{{ jsonData?.data.imageTopText }}</p>
-      <p class="image__bottomText">{{ jsonData?.data.imageBottomText }}</p>
-    </div>
+    <holition-test-image
+      [imageUrl]="jsonData?.data.imageUrl"
+      [imageAlt]="jsonData?.data.imageAlt"
+      [imageTopText]="jsonData?.data.imageTopText"
+      [imageBottomText]="jsonData?.data.imageBottomText"
+    ></holition-test-image>
 
     <div class="test__details">
       <p class="details__textSize1">{{ jsonData?.data.textSize1 }}</p>
