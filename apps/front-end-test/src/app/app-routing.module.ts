@@ -12,7 +12,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'landing',
+        redirectTo: 'test',
         pathMatch: 'full',
       },
       {
@@ -22,11 +22,16 @@ const routes: Routes = [
             (m) => m.LandingModule
           ),
       },
+      {
+        path: 'test',
+        loadChildren: () =>
+          import('./modules/test/test.module').then((m) => m.TestModule),
+      },
     ],
   },
   {
     path: '**',
-    redirectTo: 'landing',
+    redirectTo: 'test',
   },
 ];
 
