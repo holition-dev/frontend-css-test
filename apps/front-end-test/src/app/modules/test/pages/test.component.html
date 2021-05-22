@@ -9,10 +9,10 @@
       [imageBottomText]="jsonData?.data.imageBottomText"
     ></holition-test-image>
 
-    <div class="test__details">
-      <p class="details__textSize1">{{ jsonData?.data.textSize1 }}</p>
-      <p class="details__textSize2">{{ jsonData?.data.textSize2 }}</p>
-      <p class="details__textSize3">{{ jsonData?.data.textSize3 }}</p>
-    </div>
+    <holition-test-details
+      [textSize1]="jsonData?.data.textSize1"
+      [textSize2]="jsonData?.data.textSize2"
+      [textSize3]="jsonData?.data.textSize3"
+    ></holition-test-details>
   </div>
 </main>
