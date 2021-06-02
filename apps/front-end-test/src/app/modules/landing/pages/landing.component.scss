@@ -1,7 +1,29 @@
-header {
-  h1 {
-    margin: 0;
-    text-align: center;
-    font-size: 1.2em;
+:host {
+  display: block;
+  padding: 30px;
+  background: #ffffd3;
+  height: 100vh;
+
+  header {
+    h1 {
+      margin: 0;
+      text-align: center;
+      font-size: 1.2em;
+    }
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      holition-test-content-box {
+        width: 30%;
+      }
+    }
   }
 }
+
+

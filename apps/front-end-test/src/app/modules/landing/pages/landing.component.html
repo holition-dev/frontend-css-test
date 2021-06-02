@@ -1,3 +1,22 @@
 <header>
-	<h1>Welcome to {{ title }}!</h1>
+  <holition-test-title [title]='JSONData.data.textSize1'></holition-test-title>
 </header>
+
+<main>
+
+  <holition-test-image-box
+    [imageTopText]='JSONData.data.imageTopText'
+    [imageBottomText]='JSONData.data.imageBottomText'
+    [imageAlt]='JSONData.data.imageAlt'
+    [imageUrl]='JSONData.data.imageUrl'
+  ></holition-test-image-box>
+
+  <holition-test-content-box
+    [textSize1]='JSONData.data.textSize1'
+    [textSize2]='JSONData.data.textSize2'
+    [textSize3]='JSONData.data.textSize3'
+  >
+
+  </holition-test-content-box>
+
+</main>
